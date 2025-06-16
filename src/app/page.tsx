@@ -5,7 +5,5 @@ export default function Home() {
     <div>
       <Button variant="outline">Click me</Button>
     </div>
-
-
   )
 }
