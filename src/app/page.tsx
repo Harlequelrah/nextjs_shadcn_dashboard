@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button"
+import General from "../components/Cards/General"
 
 export default function Home() {
   return (
-    <div>
-      <Button variant="outline">Click me</Button>
+    <div className="text-xl">
+      <General />
+      Home Page
     </div>
   )
 }

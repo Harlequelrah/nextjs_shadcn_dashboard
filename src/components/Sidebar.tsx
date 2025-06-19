@@ -3,8 +3,6 @@ import { Bell, Cookie, CreditCard, Inbox, MessageSquare, Settings, User } from "
 import { Command, CommandGroup, CommandItem, CommandList, CommandSeparator } from "./ui/command";
 import UserItem from "./UserItem";
 
-
-
 export default function Sidebar() {
     const MenuList: MenuGroup[] = [
         {
