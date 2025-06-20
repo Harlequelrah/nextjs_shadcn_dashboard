@@ -1,11 +1,9 @@
-import { Button } from "@/components/ui/button"
 import General from "../components/Cards/General"
 
 export default function Home() {
-  return (
-    <div className="text-xl">
+  return <div>
+    <div className="grid grid-cols-2">
       <General />
-      Home Page
     </div>
-  )
+  </div>
 }
