@@ -1,3 +1,10 @@
+# Project
+This project is build following youtube course
+[Course]([src\screenshots\screenshot_1.png](https://www.youtube.com/watch?v=jdLsQEZ_H4o&list=PL8HkCX2C5h0VGhZnfbwf2hq7yD7nXMbJJ))
+
+
+
+##  Description
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -37,3 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Screenshots
    ![Screenshot1](src\screenshots\screenshot_1.png)
+
+   ![Screenshot2](src\screenshots\screenshot_2.png)
+
+   ![Screenshot3](src\screenshots\screenshot_3.png)
