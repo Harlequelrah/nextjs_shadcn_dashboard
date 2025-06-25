@@ -11,9 +11,22 @@ export default function TeamSettings() {
         {
             email: "maximeatsoudegbovi@gmail.com",
             full_name: "DEGBOVI Maxime",
-            backgroundColor: "rgba(125,24,66,1)",
+            backgroundColor: "rgba(100,24,66,1)",
             role:"Admin"
-        }
+        },
+        {
+            email: "elrahmorningstar@gmail.com",
+            full_name: "MORNINGSTAR elrah",
+            backgroundColor: "rgba(100,100,66,60)",
+            role: "Manager"
+        },
+        {
+            email: "jordantomegah@gmail.com",
+            full_name: "TOMEGAH",
+            backgroundColor: "rgba(255,255,60,1)",
+            role: "Manager"
+        },
+
     ]);
     return <div>
         <header>
@@ -25,7 +38,7 @@ export default function TeamSettings() {
             {
                 members.map((member: Member, key: number) => <div className='border-b last:border-b-0 flex items-center justify-between pr-2 '  key={key}>
                     <UserItemCard member={member} />
-                    <Button>Remove</Button>
+                    <Button variant="secondary">Remove</Button>
                 </div>
                 )
             }
