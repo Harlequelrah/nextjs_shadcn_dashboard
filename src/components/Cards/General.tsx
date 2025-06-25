@@ -27,17 +27,17 @@ const MyBump = ({ data }: any) => {
         activePointBorderWidth={3}
         pointBorderColor={{ from: 'serie.color' }}
         axisLeft={{ legend: 'ranking', legendOffset: -40 }}
-        margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
+        margin={{ top: 20, right: 60, bottom: 20, left: 20 }}
     />
 }
 
 export default function General() {
-    return <Card className='w-full'>
+    return <Card className='w-full' >
         <CardHeader>
             <CardTitle>This week</CardTitle>
             <CardDescription>These are result of this week</CardDescription>
         </CardHeader>
-        <CardContent className='grid gap-4 h-[400px]'>
+        <CardContent className='grid gap-4  h-[400px]'>
             <MyBump data={data} />
         </CardContent>
     </Card>;

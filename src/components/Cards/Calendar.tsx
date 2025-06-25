@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { ResponsiveTimeRange } from '@nivo/calendar'
 import { data } from '../../app/data/calendar_data';
-const MyTimeRange = ({ data}: any) => {
+const MyTimeRange = ({ data }: any) => {
     return (
         <ResponsiveTimeRange
             data={data}
@@ -45,7 +45,7 @@ export default function Calendar() {
         const startDate = new Date("2025-01-01");
         const endDate = new Date("2025-12-31");
         while (startDate <= endDate) {
-            const value = Math.floor(Math.random()*301)
+            const value = Math.floor(Math.random() * 301)
             const formattedDate = startDate.toISOString().split('T')[0];
             data.push({
                 "value": value,
@@ -75,7 +75,7 @@ export default function Calendar() {
             <CardTitle>Calendar</CardTitle>
             <CardDescription>These are the number of  this year</CardDescription>
         </CardHeader>
-        <CardContent className="h-[240px]  w-full">
+        <CardContent className="h-[200px]  w-full">
             <MyTimeRange data={dataArray} />
         </CardContent>
     </Card>;

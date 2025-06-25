@@ -1,7 +1,10 @@
-
+"use client";
 import { Bell, Cookie, CreditCard, Inbox, MessageSquare, Settings, User } from "lucide-react";
 import { Command, CommandGroup, CommandItem, CommandList, CommandSeparator } from "./ui/command";
 import UserItem from "./UserItem";
+// import  UserItem  from 'useritem';
+import dynamic from "next/dynamic";
+
 
 export default function Sidebar() {
     const MenuList: MenuGroup[] = [
@@ -52,7 +55,13 @@ export default function Sidebar() {
         },
     ];
     return (
-        <div className="fixed flex flex-col min-w-[300px] w-[300px]">
+        <div className="fixed flex flex-col min-w-[300px] w-[300px] border-r min-h-screen p-4 ">
+            {/* <UserItem
+                name="Maxime DEGBOVI"
+                description="maximeatsou@mail.com"
+                avatarUrl="https://i.pinimg.com/736x/e3/40/32/e3403289f6294361b5d10b386836222f.jpg"
+                onClick={(e) => console.log("User item clicked!", e)}
+            /> */}
             <UserItem />
             <div className="grow">
                 <Command>
@@ -67,7 +76,6 @@ export default function Sidebar() {
                                 )}
                         </CommandGroup>
                         ))}
-
                         <CommandSeparator />
                     </CommandList>
                 </Command>
