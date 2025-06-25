@@ -4,6 +4,7 @@ import { Command, CommandGroup, CommandItem, CommandList, CommandSeparator } fro
 import UserItem from "./UserItem";
 // import  UserItem  from 'useritem';
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 
 export default function Sidebar() {
@@ -80,7 +81,11 @@ export default function Sidebar() {
                     </CommandList>
                 </Command>
             </div>
-            <div>Settings / Notification </div>
+            <Link href="/team" className="flex items-center gap-2">
+                <Settings />
+                <span></span>
+                Team Settings
+            </Link>
         </div>
     );
 }
