@@ -1,3 +1,22 @@
+.tag{
+  @apply capitalize;
+}
+.tag.admin{
+  @apply  bg-orange-100 hover:bg-orange-100 text-orange-500;
+}
+.tag.viewer{
+  @apply  bg-purple-100 hover:bg-purple-100 text-purple-500;
+}
+.tag.manager{
+  @apply  bg-orange-100 hover:bg-orange-100 text-orange-500;
+}
+.tag.assistant{
+  @apply  bg-purple-100 hover:bg-purple-100 text-purple-500;
+}
+
+.pending{
+  @apply  bg-amber-100 hover:bg-amber-100 text-amber-500;
+}
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -113,33 +132,16 @@
 }
 
 @layer base {
+
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
   }
   .bg-card{
     overflow:hidden!important;
   }
-  .tag{
-    @apply capitalize;
-  }
-  .tag.admin{
-    @apply  bg-orange-100 hover:bg-orange-100 text-orange-500;
-  }
-  .tag.viewer{
-    @apply  bg-purple-100 hover:bg-purple-100 text-purple-500;
-  }
-  .tag.manager{
-    @apply  bg-orange-100 hover:bg-orange-100 text-orange-500;
-  }
-  .tag.assistant{
-    @apply  bg-purple-100 hover:bg-purple-100 text-purple-500;
-  }
 
-  .pending{
-    @apply  bg-amber-100 hover:bg-amber-100 text-amber-500;
-  }
 
 }
