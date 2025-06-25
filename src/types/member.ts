@@ -3,4 +3,5 @@ export type Member = {
     full_name: string;
     backgroundColor: string;
     role: string;
+    status?: string;
 }

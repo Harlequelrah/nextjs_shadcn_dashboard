@@ -3,7 +3,6 @@ import { Bell, Cookie, CreditCard, Inbox, MessageSquare, Settings, User } from "
 import { Command, CommandGroup, CommandItem, CommandList, CommandSeparator } from "./ui/command";
 import UserItem from "./UserItem";
 // import  UserItem  from 'useritem';
-import dynamic from "next/dynamic";
 import Link from "next/link";
 
 
